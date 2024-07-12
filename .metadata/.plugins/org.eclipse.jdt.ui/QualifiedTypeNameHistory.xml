@@ -11,5 +11,8 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="com.inventory.payload.ProductDto"/>
     <fullyQualifiedTypeName name="com.inventory.entity.Stock"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
+    <fullyQualifiedTypeName name="org.modelmapper.spi.MatchingStrategy"/>
+    <fullyQualifiedTypeName name="org.modelmapper.convention.MatchingStrategies"/>
 </qualifiedTypeNameHistroy>

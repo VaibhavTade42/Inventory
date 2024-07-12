@@ -1,9 +1,14 @@
 package com.inventory.entity;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -27,6 +32,12 @@ public class Product {
 	private String description;
 	
 	private double price;
+	
+	@ManyToMany(mappedBy="products")
+	private Set<Order> orders;
+	
+	@OneToOne(mappedBy="products", cascade=CascadeType.ALL)
+	private Stock stock;
 
 
 }

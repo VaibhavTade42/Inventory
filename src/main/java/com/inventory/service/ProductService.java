@@ -3,19 +3,20 @@ package com.inventory.service;
 import java.util.List;
 
 import com.inventory.entity.Product;
+import com.inventory.payload.ProductDto;
 
 public interface ProductService {
 
-	Product saveProductDetails(Product product);
+	ProductDto saveProductDetails(ProductDto productDto);
 
-	List<Product> findAllProducts();
+	List<ProductDto> findAllProducts();
 
-	Product findProductById(Long id);
+	ProductDto findProductById(Long id);
 
 	
 
-	Product updateProductById(Long product_id, Product updatedProduct);
+	ProductDto updateProductById(Long productId, ProductDto updatedProduct);
 
-	void deleteProductById(Long product_id);
+	void deleteProductById(Long productId);
 
 }
