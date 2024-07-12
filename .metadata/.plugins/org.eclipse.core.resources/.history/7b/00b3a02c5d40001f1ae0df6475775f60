@@ -1,0 +1,16 @@
+package com.inventory.payload;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+import com.inventory.entity.Product;
+
+public class StockDto {
+	
+    private Long id;
+	
+	private Product product;
+	
+    private int quantity;
+
+}

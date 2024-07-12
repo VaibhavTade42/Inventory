@@ -1,0 +1,13 @@
+package com.inventory.payload;
+
+import com.inventory.entity.Product;
+
+public class StockDto {
+	
+    private Long id;
+	
+	private Product product;
+	
+    private int quantity;
+
+}
